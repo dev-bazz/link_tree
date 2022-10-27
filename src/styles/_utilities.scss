@@ -1,0 +1,6 @@
+
+
+@function pixTOrem($value,$suffix:rem){
+        $calculate: calc($value/16px);
+        @return #{$calculate}#{$suffix}
+}
