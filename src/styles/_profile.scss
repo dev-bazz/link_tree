@@ -1,0 +1,18 @@
+@import "./utilities";
+
+.profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: pixTOrem(64px);
+
+        &__wrapper{
+                clip-path: circle();
+                width: clamp(pixTOrem(32px,rem), 100%, pixTOrem(88px,rem));
+        }
+        &__name{
+                font-size: pixTOrem(20px,rem);
+                font-weight: 700;
+                margin-top: pixTOrem(24px);
+        }
+}
