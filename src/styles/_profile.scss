@@ -9,6 +9,7 @@
         &__wrapper{
                 clip-path: circle();
                 width: clamp(pixTOrem(32px,rem), 100%, pixTOrem(88px,rem));
+                cursor: pointer;
         }
         &__name{
                 font-size: pixTOrem(20px,rem);

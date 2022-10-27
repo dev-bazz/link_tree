@@ -1,2 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @import "./reset";
 @import "./profile";
+@import "./link";
+
+body{
+        font-family: 'Inter', sans-serif;
+}

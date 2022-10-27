@@ -1,4 +1,4 @@
-/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); /* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -75,10 +75,21 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 4rem;
 }
 .profile__wrapper {
   clip-path: circle();
   width: clamp(2rem, 100%, 5.5rem);
+  cursor: pointer;
+}
+.profile__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
