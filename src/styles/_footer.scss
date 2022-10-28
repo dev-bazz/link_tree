@@ -1,0 +1,24 @@
+@import "./utilities";
+
+.footer{
+        margin-top: pixTOrem(100px);
+
+        
+        &__text{
+                font-size: pixTOrem(16px);
+                color: #667085;
+        }
+
+        &__wrapper{
+                width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px,rem));
+                margin-inline: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                padding-inline: pixTOrem(16px);
+                gap: pixTOrem(16px);
+                border:  solid #EAECF0;
+                border-width: 2px 0 0 0;
+                padding-top: pixTOrem(44px);
+        }
+}

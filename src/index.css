@@ -132,6 +132,26 @@ select {
   list-style: none;
 }
 
+.footer {
+  margin-top: 6.25em;
+}
+.footer__text {
+  font-size: 1em;
+  color: #667085;
+}
+.footer__wrapper {
+  width: clamp(18.75rem, 100%, 72rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-inline: 1em;
+  gap: 1em;
+  border: solid #EAECF0;
+  border-width: 2px 0 0 0;
+  padding-top: 2.75em;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
