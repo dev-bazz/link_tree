@@ -75,7 +75,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 4em;
 }
 .profile__wrapper {
   clip-path: circle();
@@ -85,7 +85,7 @@ select {
 .profile__name {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 
 .btn-link {
@@ -95,27 +95,41 @@ select {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
 }
 .btn-link:hover {
-  background-color: #D0D5DD;
+  background-color: #d0d5dd;
   transition: background-color 0.2s ease-in-out;
 }
 .btn-link__a {
   color: #101828;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
+  background-color: #eaecf0;
+  display: flex;
+  min-height: 4.75rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+.btn-link__a:hover {
+  background-color: #d0d5dd;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .link-wrapper {
-  padding-inline: 1rem;
-  margin-top: 3.5rem;
-  width: clamp(18.75rem, 100%, 72rem);
+  padding-inline: 1em;
+  margin-top: 3.5em;
+  width: clamp(18.75em, 100%, 72em);
   margin-inline: auto;
 }
 .link-wrapper > * + * {
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
+}
+.link-wrapper li {
+  list-style: none;
 }
 
 body {

@@ -2,7 +2,7 @@
 
 export default function LinkButton({ url, id, text }) {
   return (
-    <li className="btn-link">
+    <li>
       <a href={url} id={id} className='btn-link__a'>{text}</a>
     </li>
   )

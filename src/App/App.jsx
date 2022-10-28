@@ -13,7 +13,7 @@ const [{name}] = useState(userDetails)
     <div>App
       <ProfileDetails user={name}/>
       {/* Links Components */}
-      <div className="link-wrapper">
+      <ul className="link-wrapper">
       {linkData.map((link, index)=>{
         const {url, text,id} = link;
         return <LinkButton 
@@ -22,7 +22,7 @@ const [{name}] = useState(userDetails)
         id={id}
          key={index} />
       })}
-      </div>
+      </ul>
       <Footer />
     </div>
   )
