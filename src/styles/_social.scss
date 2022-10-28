@@ -1,0 +1,11 @@
+@import "./utilities";
+
+.social{
+        width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px,rem));
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: pixTOrem(32px);
+        padding-block: pixTOrem(32px);
+}
