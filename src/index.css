@@ -88,6 +88,36 @@ select {
   margin-top: 1.5rem;
 }
 
+.btn-link {
+  background-color: #eaecf0;
+  display: flex;
+  min-height: 4.75rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.btn-link:hover {
+  background-color: #D0D5DD;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn-link__a {
+  color: #101828;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link-wrapper {
+  padding-inline: 1rem;
+  margin-top: 3.5rem;
+  width: clamp(18.75rem, 100%, 72rem);
+  margin-inline: auto;
+}
+.link-wrapper > * + * {
+  margin-top: 1.5rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
