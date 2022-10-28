@@ -2,7 +2,9 @@ import { useState } from "react";
 import Footer from "./Footer";
 import LinkButton from "./LinkButton";
 import ProfileDetails from "./ProfileDetails";
-import {uiData, userDetails} from "../appData"
+import {uiData, userDetails} from "../appData";
+import slack from "../img/slack.svg";
+import gitHub from "../img/Social icon.svg";
 
 export default function App() {
 
@@ -22,7 +24,12 @@ const [{name}] = useState(userDetails)
         id={id}
          key={index} />
       })}
+      
       </ul>
+      <div className="social">
+        <a href="https://slack.com/"><img src={slack} alt="slack Link" /></a>
+        <a href="https://github.com/dev-bazz"><img src={gitHub} alt="github" /></a>
+      </div>
       <Footer />
     </div>
   )

@@ -88,6 +88,16 @@ select {
   margin-top: 1.5em;
 }
 
+.social {
+  width: clamp(18.75rem, 100%, 72rem);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding-block: 2em;
+}
+
 .btn-link {
   background-color: #eaecf0;
   display: flex;
@@ -149,7 +159,7 @@ select {
   gap: 1em;
   border: solid #EAECF0;
   border-width: 2px 0 0 0;
-  padding-top: 2.75em;
+  padding-block: 2.75em;
 }
 
 body {
