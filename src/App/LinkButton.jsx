@@ -1,9 +1,9 @@
 
 
-export default function LinkButton({ url, id, text }) {
+export default function LinkButton({ url, id, text, title }) {
   return (
     <li>
-      <a href={url} id={id} className='btn-link__a'>{text}</a>
+      <a href={url} id={id} className='btn-link__a' title={title}>{text}</a>
     </li>
   )
 }
