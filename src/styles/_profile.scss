@@ -5,15 +5,68 @@
         flex-direction: column;
         align-items: center;
         margin-top: pixTOrem(64px);
+        
 
         &__wrapper{
+                position: relative;
                 clip-path: circle();
                 width: clamp(pixTOrem(32px,rem), 100%, pixTOrem(88px,rem));
                 cursor: pointer;
+                .hovered{
+                        background-color: rgba(19, 9, 26, 0.199);
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
         }
         &__name{
                 font-size: pixTOrem(20px,rem);
                 font-weight: 700;
                 margin-top: pixTOrem(24px);
+        }
+}
+
+header{
+        position: relative;
+        width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px,rem));
+        margin: auto;
+}
+.share{
+        position: absolute;
+        border: pixTOrem(4px) dotted #D0D5DD;
+        padding: pixTOrem(14px);
+        border-radius: pixTOrem(100px);
+	top: 0;
+	right: 0;
+	translate: pixTOrem(-112px) pixTOrem(-13px);
+        cursor: pointer;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:is(:hover){
+                background-color: #d0d5dd50;
+        }
+
+        .sd{
+                display: none;
+        }
+}
+#slack{
+        display: none;
+}
+
+@media (max-width: 767.98px){
+        .share{
+                right: pixTOrem(-68px);
+                
+                .sd{
+                        display: block;
+                }
+                .ld{
+                        display: none;
+                }
         }
 }
