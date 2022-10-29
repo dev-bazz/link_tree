@@ -22,3 +22,9 @@
                 padding-block: pixTOrem(44px);
         }
 }
+
+@media (max-width: 767.98px){
+        .footer__wrapper{
+                flex-flow: column;
+        }
+}

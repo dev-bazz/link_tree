@@ -223,6 +223,11 @@ header {
   padding-block: 2.75em;
 }
 
+@media (max-width: 767.98px) {
+  .footer__wrapper {
+    flex-flow: column;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
 }
