@@ -83,18 +83,27 @@ select {
   width: clamp(2rem, 100%, 5.5rem);
   cursor: pointer;
 }
-.profile__wrapper .hovered {
-  background-color: rgba(19, 9, 26, 0.199);
-  position: absolute;
-  inset: 0;
+.profile__wrapper:hover .hovered {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .profile__name {
   font-size: 1.25rem;
   font-weight: 700;
   margin-top: 1.5em;
+}
+
+.hovered {
+  background-color: rgba(52, 64, 84, 0.7098039216);
+  display: none;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  display: none;
+}
+.hovered img {
+  margin-bottom: 0.75em;
 }
 
 header {

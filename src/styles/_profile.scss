@@ -12,14 +12,10 @@
                 clip-path: circle();
                 width: clamp(pixTOrem(32px,rem), 100%, pixTOrem(88px,rem));
                 cursor: pointer;
-                .hovered{
-                        background-color: rgba(19, 9, 26, 0.199);
-                        position: absolute;
-                        inset: 0;
+                &:hover .hovered{
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
                 }
+                
         }
         &__name{
                 font-size: pixTOrem(20px,rem);
@@ -27,6 +23,21 @@
                 margin-top: pixTOrem(24px);
         }
 }
+
+.hovered{
+                        background-color:  #344054b5;
+                        display: none;
+;
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        display: none;
+                        img{
+                                margin-bottom: pixTOrem(12px);
+                        }
+                }
 
 header{
         position: relative;
