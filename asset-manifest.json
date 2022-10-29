@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/link_tree/static/css/main.65bbe00c.css",
-    "main.js": "/link_tree/static/js/main.7b274314.js",
+    "main.js": "/link_tree/static/js/main.3f5e920a.js",
     "static/media/Zuri.Internship_Logo.svg": "/link_tree/static/media/Zuri.Internship_Logo.0f8c3aa843c87d1f28aa0826858bd0ef.svg",
     "static/media/slack.svg": "/link_tree/static/media/slack.87ba9caeb75d37f14fe434c266c7d9c7.svg",
     "static/media/Social icon.svg": "/link_tree/static/media/Social icon.05ffca422514a5bbf3ac752e4d893c57.svg",
     "index.html": "/link_tree/index.html",
     "main.65bbe00c.css.map": "/link_tree/static/css/main.65bbe00c.css.map",
-    "main.7b274314.js.map": "/link_tree/static/js/main.7b274314.js.map"
+    "main.3f5e920a.js.map": "/link_tree/static/js/main.3f5e920a.js.map"
   },
   "entrypoints": [
     "static/css/main.65bbe00c.css",
-    "static/js/main.7b274314.js"
+    "static/js/main.3f5e920a.js"
   ]
 }
