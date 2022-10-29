@@ -93,6 +93,7 @@ select {
 }
 
 .hovered {
+  transition: all 0.3s ease-out;
   background-color: rgba(52, 64, 84, 0.7098039216);
   display: none;
   position: absolute;

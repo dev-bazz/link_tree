@@ -29,7 +29,7 @@ export default function App() {
       </ul>
       <div className="social">
         <a href="https://slack.com/"><img src={slack} alt="slack Link" /></a>
-        <a href="https://github.com/dev-bazz"><img src={gitHub} alt="github" /></a>
+        <a href="https://github.com/dev-bazz/link_tree"><img src={gitHub} alt="github" /></a>
       </div>
       <Footer />
     </div>

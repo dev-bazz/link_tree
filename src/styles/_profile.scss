@@ -6,7 +6,6 @@
         align-items: center;
         margin-top: pixTOrem(64px);
         
-
         &__wrapper{
                 position: relative;
                 clip-path: circle();
@@ -25,9 +24,9 @@
 }
 
 .hovered{
+        transition: all .3s ease-out;
                         background-color:  #344054b5;
                         display: none;
-;
                         position: absolute;
                         inset: 0;
                         display: flex;
