@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+### Live Link:
+https://dev-bazz.github.io/link_tree/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
