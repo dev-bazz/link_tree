@@ -1,5 +1,5 @@
-@import "./utilities";
 
+@use "./utilities" as *;
 .social{
         width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px,rem));
         margin: auto;

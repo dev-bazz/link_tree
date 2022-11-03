@@ -1,4 +1,4 @@
-@import "./utilities";
+@use "./utilities" as *;
 
 .footer{
         margin-top: pixTOrem(100px);
