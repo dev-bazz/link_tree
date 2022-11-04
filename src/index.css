@@ -32,9 +32,9 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  line-height: 1.5;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -45,8 +45,8 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -67,21 +67,21 @@ select {
 *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
 .profile {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 4em;
 }
 .profile__wrapper {
-  position: relative;
   clip-path: circle();
-  width: clamp(2rem, 100%, 5.5rem);
   cursor: pointer;
+  position: relative;
+  width: clamp(2rem, 100%, 5.5rem);
 }
 .profile__wrapper:hover .hovered {
   display: flex;
@@ -93,39 +93,39 @@ select {
 }
 
 .hovered {
-  transition: all 0.3s ease-out;
-  background-color: rgba(52, 64, 84, 0.7098039216);
-  display: none;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
+  background-color: rgba(52, 64, 84, 0.7098039216);
+  display: flex;
   display: none;
+  display: none;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  transition: all 0.3s ease-out;
 }
 .hovered img {
   margin-bottom: 0.75em;
 }
 
 header {
+  margin: auto;
   position: relative;
   width: clamp(18.75rem, 100%, 72rem);
-  margin: auto;
 }
 
 .share {
-  position: absolute;
-  border: 0.25em dotted #D0D5DD;
-  padding: 0.875em;
-  border-radius: 6.25em;
-  top: 0;
-  right: 0;
-  translate: -7em -0.8125em;
-  cursor: pointer;
+  align-items: center;
   aspect-ratio: 1/1;
+  border-radius: 6.25em;
+  border: 0.25em dotted #d0d5dd;
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 0.875em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  translate: -7em -0.8125em;
 }
 .share:is(:hover) {
   background-color: rgba(208, 213, 221, 0.3137254902);
@@ -150,40 +150,40 @@ header {
   }
 }
 .social {
-  width: clamp(18.75rem, 100%, 72rem);
-  margin: auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   gap: 2em;
+  justify-content: center;
+  margin: auto;
   padding-block: 2em;
+  width: clamp(18.75rem, 100%, 72rem);
 }
 
 .btn-link {
-  background-color: #eaecf0;
-  display: flex;
-  min-height: 4.75rem;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
+  background-color: #eaecf0;
   border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  min-height: 4.75rem;
 }
 .btn-link:hover {
   background-color: #d0d5dd;
   transition: background-color 0.2s ease-in-out;
 }
 .btn-link__a {
+  align-items: center;
+  background-color: #eaecf0;
+  border-radius: 0.5em;
   color: #101828;
-  text-decoration: none;
+  cursor: pointer;
+  display: flex;
   font-size: 1.125em;
   font-weight: 500;
-  background-color: #eaecf0;
-  display: flex;
-  min-height: 4.75rem;
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 0.5em;
+  min-height: 4.75rem;
+  text-decoration: none;
 }
 .btn-link__a:hover {
   background-color: #d0d5dd;
@@ -191,10 +191,10 @@ header {
 }
 
 .link-wrapper {
-  padding-inline: 1em;
-  margin-top: 3.5em;
-  width: clamp(18.75em, 100%, 72em);
   margin-inline: auto;
+  margin-top: 3.5em;
+  padding-inline: 1em;
+  width: min(100%, 72em);
 }
 .link-wrapper > * + * {
   margin-top: 1.5em;
@@ -207,20 +207,20 @@ header {
   margin-top: 6.25em;
 }
 .footer__text {
-  font-size: 1em;
   color: #667085;
+  font-size: 1em;
 }
 .footer__wrapper {
-  width: clamp(18.75rem, 100%, 72rem);
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding-inline: 1em;
-  gap: 1em;
-  border: solid #EAECF0;
   border-width: 2px 0 0 0;
+  border: solid #eaecf0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  justify-content: space-between;
+  margin-inline: auto;
   padding-block: 2.75em;
+  padding-inline: 1em;
+  width: clamp(18.75rem, 100%, 72rem);
 }
 
 @media (max-width: 767.98px) {
@@ -228,6 +228,12 @@ header {
     flex-flow: column;
   }
 }
+.content-container {
+  width: min(100%, 72em);
+  margin-inline: auto;
+  margin-top: 9.75em;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }

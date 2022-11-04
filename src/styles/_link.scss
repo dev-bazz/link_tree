@@ -1,48 +1,45 @@
 @use "./utilities" as *;
-
 .btn-link {
-        background-color: #eaecf0;
-        display: flex;
-
-        min-height: pixTOrem(76px, rem);
-        justify-content: center;
         align-items: center;
-        cursor: pointer;
+        background-color: #eaecf0;
         border-radius: pixTOrem(8px);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        min-height: pixTOrem(76px, rem);
+
         &:hover {
                 background-color: #d0d5dd;
                 transition: background-color 0.2s ease-in-out;
         }
-
         &__a {
+                align-items: center;
+                background-color: #eaecf0;
+                border-radius: pixTOrem(8px);
                 color: #101828;
-                text-decoration: none;
+                cursor: pointer;
+                display: flex;
                 font-size: pixTOrem(18px);
                 font-weight: 500;
-                background-color: #eaecf0;
-                display: flex;
-                min-height: pixTOrem(76px, rem);
                 justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                border-radius: pixTOrem(8px);
+                min-height: pixTOrem(76px, rem);
+                text-decoration: none;
                 &:hover {
                         background-color: #d0d5dd;
                         transition: background-color 0.2s ease-in-out;
                 }
         }
 }
-
 .link-wrapper {
-        
-        padding-inline: pixTOrem(16px);
-        margin-top: pixTOrem(56px);
-        width: min(100%, pixTOrem(1152px));
         margin-inline: auto;
+        margin-top: pixTOrem(56px);
+        padding-inline: pixTOrem(16px);
+        width: min(100%, pixTOrem(1152px));
+
         & > * + * {
                 margin-top: pixTOrem(24px);
         }
-        li{
+        li {
                 list-style: none;
         }
 }
