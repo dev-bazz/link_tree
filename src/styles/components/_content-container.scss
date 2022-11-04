@@ -1,0 +1,6 @@
+@use "../utilities";
+
+.container{
+        width: min(100%, pixTOrem(1152px));
+        margin: auto;
+}

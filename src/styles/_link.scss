@@ -34,9 +34,10 @@
 }
 
 .link-wrapper {
+        
         padding-inline: pixTOrem(16px);
         margin-top: pixTOrem(56px);
-        width: clamp(pixTOrem(300px), 100%, pixTOrem(1152px));
+        width: min(100%, pixTOrem(1152px));
         margin-inline: auto;
         & > * + * {
                 margin-top: pixTOrem(24px);
