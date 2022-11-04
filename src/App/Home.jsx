@@ -4,7 +4,7 @@ import ProfileDetails from "./ProfileDetails";
 import { uiData, userDetails } from "../appData";
 import slack from "../img/slack.svg";
 import gitHub from "../img/Social icon.svg";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
