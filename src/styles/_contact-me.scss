@@ -2,9 +2,28 @@
 .contact-us{
         &__msg > * + *{
                 margin-top: pixTOrem(20px);
-                background-color: aquamarine;
         }
         &__h1{
                 font-size: pixTOrem(36px);
+        }
+        &__p{
+                color: #475467;
+        }
+}
+
+.form{
+        margin-top: pixTOrem(48px);
+
+        &__name{
+                display: flex;
+                flex-direction: column;
+                input{
+                        width: 300%;
+                        max-width: pixTOrem(348px);
+                }
+        }
+        &__flex{
+                display: flex;
+                justify-content: space-between;
         }
 }

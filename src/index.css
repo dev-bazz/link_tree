@@ -229,17 +229,35 @@ header {
   }
 }
 .content-container {
-  width: min(100%, 72em);
+  width: min(100%, 45em);
   margin-inline: auto;
   margin-top: 9.75em;
 }
 
 .contact-us__msg > * + * {
   margin-top: 1.25em;
-  background-color: aquamarine;
 }
 .contact-us__h1 {
   font-size: 2.25em;
+}
+.contact-us__p {
+  color: #475467;
+}
+
+.form {
+  margin-top: 3em;
+}
+.form__name {
+  display: flex;
+  flex-direction: column;
+}
+.form__name input {
+  width: 300%;
+  max-width: 21.75em;
+}
+.form__flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
