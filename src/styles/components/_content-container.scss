@@ -1,7 +1,8 @@
 @use "../utilities" as *;
 
 .content-container{
-        width: min(100%, pixTOrem(720px));
+        width: min(100%, pixTOrem(820px));
         margin-inline: auto;
         margin-top: pixTOrem(156px);
+        padding-inline: pixTOrem(16px);
 }

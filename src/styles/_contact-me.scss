@@ -1,29 +1,80 @@
 @use "./utilities" as *;
-.contact-us{
-        &__msg > * + *{
+.contact-us {
+        &__msg > * + * {
                 margin-top: pixTOrem(20px);
         }
-        &__h1{
+        &__h1 {
                 font-size: pixTOrem(36px);
         }
-        &__p{
+        &__p {
                 color: #475467;
         }
 }
 
-.form{
+@mixin input__default {
+        padding-inline: pixTOrem(14px);
+        padding-block: pixTOrem(10px);
+        border-radius: pixTOrem(8px);
+        margin-top: pixTOrem(6px);
+        border: none;
+        border: 1px solid #d0d5dd;
+}
+
+.form {
         margin-top: pixTOrem(48px);
 
-        &__name{
+        &__name {
                 display: flex;
                 flex-direction: column;
-                input{
-                        width: 300%;
-                        max-width: pixTOrem(348px);
+                flex: 1;
+                input {
+                        flex: 1;
+                        width: 100%;
+                        @include input__default();
+                        &:placeholder-shown {
+                                color: #667085;
+                        }
+                        &:invalid{
+                                background-color: #ee1515;
+                        }
                 }
         }
-        &__flex{
+        .email {
+                margin-top: pixTOrem(24px);
+                display: flex;
+                flex-direction: column;
+                input {
+                        @include input__default();
+                        &:placeholder-shown {
+                                color: #667085;
+                        }
+                        
+                }
+        }
+
+        .message{
+                margin-top: pixTOrem(24px);
+                display: flex;
+                flex-direction: column;
+
+                textarea{
+                        @include input__default();
+
+                        &:placeholder-shown {
+                                color: #667085;
+                        }
+                }
+        }
+        &__flex {
                 display: flex;
                 justify-content: space-between;
+                gap: pixTOrem(24px);
+        }
+
+
+
+        &-cta{
+                width: 100%;
+                text-align: center;
         }
 }

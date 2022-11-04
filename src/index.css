@@ -229,9 +229,10 @@ header {
   }
 }
 .content-container {
-  width: min(100%, 45em);
+  width: min(100%, 51.25em);
   margin-inline: auto;
   margin-top: 9.75em;
+  padding-inline: 1em;
 }
 
 .contact-us__msg > * + * {
@@ -250,14 +251,64 @@ header {
 .form__name {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .form__name input {
-  width: 300%;
-  max-width: 21.75em;
+  flex: 1;
+  width: 100%;
+  padding-inline: 0.875em;
+  padding-block: 0.625em;
+  border-radius: 0.5em;
+  margin-top: 0.375em;
+  border: none;
+  border: 1px solid #d0d5dd;
+}
+.form__name input:placeholder-shown {
+  color: #667085;
+}
+.form__name input:invalid {
+  background-color: #ee1515;
+}
+.form .email {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.form .email input {
+  padding-inline: 0.875em;
+  padding-block: 0.625em;
+  border-radius: 0.5em;
+  margin-top: 0.375em;
+  border: none;
+  border: 1px solid #d0d5dd;
+}
+.form .email input:placeholder-shown {
+  color: #667085;
+}
+.form .message {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.form .message textarea {
+  padding-inline: 0.875em;
+  padding-block: 0.625em;
+  border-radius: 0.5em;
+  margin-top: 0.375em;
+  border: none;
+  border: 1px solid #d0d5dd;
+}
+.form .message textarea:placeholder-shown {
+  color: #667085;
 }
 .form__flex {
   display: flex;
   justify-content: space-between;
+  gap: 1.5em;
+}
+.form-cta {
+  width: 100%;
+  text-align: center;
 }
 
 body {
