@@ -1,0 +1,10 @@
+@use "./utilities" as *;
+.contact-us{
+        &__msg > * + *{
+                margin-top: pixTOrem(20px);
+                background-color: aquamarine;
+        }
+        &__h1{
+                font-size: pixTOrem(36px);
+        }
+}
