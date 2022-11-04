@@ -1,11 +1,10 @@
-
 @use "./utilities" as *;
-.social{
-        width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px,rem));
-        margin: auto;
-        display: flex;
-        justify-content: center;
+.social {
         align-items: center;
+        display: flex;
         gap: pixTOrem(32px);
+        justify-content: center;
+        margin: auto;
         padding-block: pixTOrem(32px);
+        width: clamp(pixTOrem(300px, rem), 100%, pixTOrem(1152px, rem));
 }
