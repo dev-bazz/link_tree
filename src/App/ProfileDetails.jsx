@@ -9,9 +9,9 @@ export default function ProfileDetails({ user }) {
 
         <div className="profile__wrapper">
           <div className="hovered">
-            <img src={change} alt="change Image" />
+            <img src={change} alt="change" />
           </div>
-          <img src="https://avatars.githubusercontent.com/u/67967265?v=4" alt="" className="profile__img" id="profile_img" />
+          <img src="https://avatars.githubusercontent.com/u/67967265?v=4" alt="Clement Femi Bazuaye" className="profile__img" id="profile_img" />
         </div>
         <h1 className="profile__name" id="twitter">
           {user}

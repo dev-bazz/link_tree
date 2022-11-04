@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Footer from "./Footer";
 import LinkButton from "./LinkButton";
 import ProfileDetails from "./ProfileDetails";
 import { uiData, userDetails } from "../appData";
 import slack from "../img/slack.svg";
 import gitHub from "../img/Social icon.svg";
+import {Link} from "react-router-dom";
 
 
 export default function Home() {
@@ -23,6 +23,9 @@ export default function Home() {
                                                 key={index}
                                                 title={title} />
                                 })}
+                                <li>
+                                        <Link to="/contact-me" className="btn-link__a">Contact Me</Link>
+                                </li>
                         </ul>
                         <div className="social">
                                 <a href="https://slack.com/"><img src={slack} alt="slack Link" /></a>

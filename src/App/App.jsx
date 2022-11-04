@@ -1,6 +1,8 @@
 import Footer from "./Footer";
 import Home from "./Home";
-import {Routes,Route} from "react-router-dom"
+import {Routes,Route} from "react-router-dom";
+import ContactMe from "./ContactMe";
+
 
 
 export default function App() {
@@ -8,6 +10,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="contact-me" element={<ContactMe />} />
       </Routes>
       <Footer />
     </>
