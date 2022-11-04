@@ -9,27 +9,27 @@ export default function ContactMe() {
                         </div>
                         <form action="#" className="form">
                                 <div className="form__flex">
-                                        <div className="form__name" >
+                                        <fieldset className="form__name" >
                                                 <label htmlFor="first_name">First Name</label>
                                                 <input type="text" id="first_name" placeholder="Enter your first name" data-erro="Please Enter  Your FIrst Name" required/>
-                                        </div>
-                                        <div className="form__name">
+                                        </fieldset>
+                                        <fieldset className="form__name">
                                                 <label htmlFor="last_name">Last Name</label>
                                                 <input type="text" id="last_name" placeholder="Enter your last name" required />
-                                        </div>
+                                        </fieldset>
                                 </div>
-                                <div className="email">
+                                <fieldset className="email">
                                         <label htmlFor="email">Email</label>
                                         <input type="email" id="email" placeholder="yourname@email.com" required />
-                                </div>
-                                <div className="message">
+                                </fieldset>
+                                <fieldset className="message">
                                         <label htmlFor="message">Message</label>
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." required></textarea>
-                                </div>
-                                <div className="check-ox">
+                                </fieldset>
+                                <fieldset className="check-ox">
                                         <input type="checkbox" name="" id="checkbox" />
                                         <label htmlFor="">You agree to providing your data to Clement who may contact you.</label>
-                                </div>
+                                </fieldset>
                                 <input type="submit" value="Send message" className="form-cta" />
                         </form>
                 </div>
