@@ -10,6 +10,10 @@
                 color: #475467;
         }
 }
+@mixin majorError {
+        outline: 2px solid #f89687;
+        box-shadow: 0px 0px 0px 4px hsla(8, 100%, 90%, 0.523);
+}
 
 @mixin input__default {
         padding-inline: pixTOrem(14px);
@@ -19,19 +23,20 @@
         border: none;
         border: 1px solid #d0d5dd;
         &.error:invalid {
-                outline: 2px solid #f89687;
-                box-shadow: 0px 0px 0px 4px hsla(8, 100%, 90%, 0.523);
+                @include majorError();
         }
+        
+
         &:focus {
                 outline: 2px solid #84caff;
                 box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px #1018280d;
         }
+        &.error400{
+                @include majorError();
+        }
 }
 @mixin error-msg {
-        label + input.error label{
-                color: red;
-        }
-        label::after {
+        .label-error::after {
                 content: attr(data-error);
                 color: #f83f23;
                 display: block;
@@ -68,6 +73,7 @@ fieldset {
                 }
         }
         .email {
+                @include error-msg();
                 margin-top: pixTOrem(24px);
                 display: flex;
                 flex-direction: column;
@@ -83,6 +89,7 @@ fieldset {
                 margin-top: pixTOrem(24px);
                 display: flex;
                 flex-direction: column;
+                @include error-msg();
 
                 textarea {
                         @include input__default();
@@ -109,6 +116,9 @@ fieldset {
                 border-radius: pixTOrem(8px);
                 margin-top: pixTOrem(32px);
                 cursor: pointer;
+                &:active {
+                        background-color: darken($color: #1570ef, $amount: 10);
+                }
         }
         .check-ox {
                 margin-top: pixTOrem(24px);
@@ -133,20 +143,20 @@ fieldset {
         }
 }
 
-@media (max-width: 767.98px){
-        .form__flex{
+@media (max-width: 767.98px) {
+        .form__flex {
                 flex-direction: column;
         }
 }
 
-@media (max-width: 283.98px){
-        :root{
+@media (max-width: 283.98px) {
+        :root {
                 font-size: 14px;
         }
 }
 
-@media (max-width: 200.98px){
-        :root{
+@media (max-width: 200.98px) {
+        :root {
                 font-size: 8px;
         }
 }

@@ -24,7 +24,7 @@ export default function Home() {
                                                 title={title} />
                                 })}
                                 <li>
-                                        <Link to="/contact-me" className="btn-link__a">Contact Me</Link>
+                                        <Link to="/contact-me" className="btn-link__a" id="contact">Contact Me</Link>
                                 </li>
                         </ul>
                         <div className="social">

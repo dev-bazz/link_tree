@@ -263,10 +263,7 @@ fieldset {
   flex-direction: column;
   flex: 1;
 }
-.form__name label + input.error label {
-  color: red;
-}
-.form__name label::after {
+.form__name .label-error::after {
   content: attr(data-error);
   color: #f83f23;
   display: block;
@@ -298,6 +295,10 @@ fieldset {
   outline: 2px solid #84caff;
   box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
 }
+.form__name input.error400 {
+  outline: 2px solid #f89687;
+  box-shadow: 0px 0px 0px 4px hsla(8deg, 100%, 90%, 0.523);
+}
 .form__name input:placeholder-shown {
   color: #667085;
 }
@@ -305,6 +306,20 @@ fieldset {
   margin-top: 1.5em;
   display: flex;
   flex-direction: column;
+}
+.form .email .label-error::after {
+  content: attr(data-error);
+  color: #f83f23;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 1em;
+  position: absolute;
+  bottom: 0;
+  translate: 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 .form .email input {
   padding-inline: 0.875em;
@@ -322,6 +337,10 @@ fieldset {
   outline: 2px solid #84caff;
   box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
 }
+.form .email input.error400 {
+  outline: 2px solid #f89687;
+  box-shadow: 0px 0px 0px 4px hsla(8deg, 100%, 90%, 0.523);
+}
 .form .email input:placeholder-shown {
   color: #667085;
 }
@@ -329,6 +348,20 @@ fieldset {
   margin-top: 1.5em;
   display: flex;
   flex-direction: column;
+}
+.form .message .label-error::after {
+  content: attr(data-error);
+  color: #f83f23;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 1em;
+  position: absolute;
+  bottom: 0;
+  translate: 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 .form .message textarea {
   padding-inline: 0.875em;
@@ -348,6 +381,10 @@ fieldset {
   outline: 2px solid #84caff;
   box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
 }
+.form .message textarea.error400 {
+  outline: 2px solid #f89687;
+  box-shadow: 0px 0px 0px 4px hsla(8deg, 100%, 90%, 0.523);
+}
 .form .message textarea:placeholder-shown {
   color: #667085;
 }
@@ -366,6 +403,9 @@ fieldset {
   border-radius: 0.5em;
   margin-top: 2em;
   cursor: pointer;
+}
+.form-cta:active {
+  background-color: #0d59c4;
 }
 .form .check-ox {
   margin-top: 1.5em;
